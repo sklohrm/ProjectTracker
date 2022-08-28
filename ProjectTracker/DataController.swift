@@ -14,7 +14,7 @@ class DataController: ObservableObject {
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
         
-        //For testing purposes storage is not saved when inMemory is true.
+        // For testing purposes storage is not saved when inMemory is true.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
