@@ -51,7 +51,7 @@ extension Project {
     
     // MARK: - Testing
     
-    static var exampleProject: Project {
+    static var example: Project {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
         
