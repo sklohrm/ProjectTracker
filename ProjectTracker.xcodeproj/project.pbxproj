@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2901EBF528BBA8CB00D02BE0 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2901EBF328BBA8CB00D02BE0 /* Main.xcdatamodeld */; };
+		2901EBF728BBAC0B00D02BE0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EBF628BBAC0B00D02BE0 /* DataController.swift */; };
+		2901EBFC28BBBB8B00D02BE0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901EBFB28BBBB8B00D02BE0 /* CloudKit.framework */; };
+		2901EBFE28BBBC7200D02BE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EBFD28BBBC7200D02BE0 /* HomeView.swift */; };
+		2901EC0028BBBD0700D02BE0 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */; };
 		298C7D6328B87C9C00CB8DC8 /* ProjectTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */; };
 		298C7D6528B87C9C00CB8DC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C7D6428B87C9C00CB8DC8 /* ContentView.swift */; };
 		298C7D6728B87C9D00CB8DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */; };
@@ -14,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2901EBF428BBA8CB00D02BE0 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		2901EBF628BBAC0B00D02BE0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2901EBF828BBBB6500D02BE0 /* ProjectTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectTracker.entitlements; sourceTree = "<group>"; };
+		2901EBF928BBBB6C00D02BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2901EBFB28BBBB8B00D02BE0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		2901EBFD28BBBC7200D02BE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		298C7D5F28B87C9C00CB8DC8 /* ProjectTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTrackerApp.swift; sourceTree = "<group>"; };
 		298C7D6428B87C9C00CB8DC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2901EBFC28BBBB8B00D02BE0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2901EBFA28BBBB8B00D02BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2901EBFB28BBBB8B00D02BE0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		298C7D5628B87C9C00CB8DC8 = {
 			isa = PBXGroup;
 			children = (
 				298C7D6128B87C9C00CB8DC8 /* ProjectTracker */,
 				298C7D6028B87C9C00CB8DC8 /* Products */,
+				2901EBFA28BBBB8B00D02BE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +73,14 @@
 		298C7D6128B87C9C00CB8DC8 /* ProjectTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2901EBF928BBBB6C00D02BE0 /* Info.plist */,
+				2901EBF828BBBB6500D02BE0 /* ProjectTracker.entitlements */,
 				298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */,
 				298C7D6428B87C9C00CB8DC8 /* ContentView.swift */,
+				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
+				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
+				2901EBF628BBAC0B00D02BE0 /* DataController.swift */,
+				2901EBF328BBA8CB00D02BE0 /* Main.xcdatamodeld */,
 				298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */,
 				298C7D6828B87C9D00CB8DC8 /* Preview Content */,
 			);
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2901EC0028BBBD0700D02BE0 /* ProjectsView.swift in Sources */,
+				2901EBF528BBA8CB00D02BE0 /* Main.xcdatamodeld in Sources */,
+				2901EBF728BBAC0B00D02BE0 /* DataController.swift in Sources */,
 				298C7D6528B87C9C00CB8DC8 /* ContentView.swift in Sources */,
+				2901EBFE28BBBC7200D02BE0 /* HomeView.swift in Sources */,
 				298C7D6328B87C9C00CB8DC8 /* ProjectTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,12 +296,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectTracker/ProjectTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZH66DBG8Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +327,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectTracker/ProjectTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZH66DBG8Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2901EBF328BBA8CB00D02BE0 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2901EBF428BBA8CB00D02BE0 /* Main.xcdatamodel */,
+			);
+			currentVersion = 2901EBF428BBA8CB00D02BE0 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 298C7D5728B87C9C00CB8DC8 /* Project object */;
 }
