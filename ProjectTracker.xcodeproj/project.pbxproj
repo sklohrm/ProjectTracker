@@ -19,6 +19,7 @@
 		2901EC0A28BBF8C600D02BE0 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EC0928BBF8C600D02BE0 /* Binding-OnChange.swift */; };
 		2901EC0C28BC087C00D02BE0 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */; };
 		2901EC0E28BC0C7600D02BE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */; };
+		2901EC1028BC239100D02BE0 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EC0F28BC239100D02BE0 /* EditProjectView.swift */; };
 		298C7D6328B87C9C00CB8DC8 /* ProjectTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */; };
 		298C7D6528B87C9C00CB8DC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C7D6428B87C9C00CB8DC8 /* ContentView.swift */; };
 		298C7D6728B87C9D00CB8DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		2901EC0928BBF8C600D02BE0 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2901EC0F28BC239100D02BE0 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		298C7D5F28B87C9C00CB8DC8 /* ProjectTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTrackerApp.swift; sourceTree = "<group>"; };
 		298C7D6428B87C9C00CB8DC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				2901EC0528BBEF5B00D02BE0 /* EditItemView.swift */,
 				2901EC0928BBF8C600D02BE0 /* Binding-OnChange.swift */,
 				2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */,
+				2901EC0F28BC239100D02BE0 /* EditProjectView.swift */,
 				2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */,
 				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
 				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
@@ -191,6 +194,7 @@
 				2901EC0C28BC087C00D02BE0 /* ProjectHeaderView.swift in Sources */,
 				2901EBF528BBA8CB00D02BE0 /* Main.xcdatamodeld in Sources */,
 				2901EC0428BBDD6C00D02BE0 /* Project-CoreDataHelpers.swift in Sources */,
+				2901EC1028BC239100D02BE0 /* EditProjectView.swift in Sources */,
 				2901EBF728BBAC0B00D02BE0 /* DataController.swift in Sources */,
 				2901EC0828BBF54000D02BE0 /* ItemRowView.swift in Sources */,
 				298C7D6528B87C9C00CB8DC8 /* ContentView.swift in Sources */,
