@@ -11,10 +11,14 @@ struct EditProjectView: View {
     let project: Project
     
     @EnvironmentObject var dataController: DataController
+    @Environment(\.presentationMode) var presentationMode
     
     @State private var title: String
     @State private var detail: String
     @State private var color: String
+    
+    @State private var showingDeleteConfirm = false
+    
     
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
@@ -61,19 +65,32 @@ struct EditProjectView: View {
                     update()
                 }
                 Button("Delete this project") {
-                    //Delete project
+                    showingDeleteConfirm.toggle()
                 }
                 .accentColor(.red)
             }
         }
         .navigationTitle("Edit Project")
         .onDisappear(perform: dataController.save)
+        .alert("Delete Project?", isPresented: $showingDeleteConfirm) {
+            Button("Delete", role: .destructive) {
+                delete()
+            }
+        } message: {
+            Text("Are you sure you want to delete this project? You will also delete all the items it contains.")
+        }
+
     }
     
     func update() -> Void {
         project.title = title
         project.detail = detail
         project.color = color
+    }
+    
+    func delete() {
+        dataController.delete(project)
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
