@@ -17,11 +17,15 @@ extension Project {
     
     var projectColor: String { color ?? "Light Blue" }
     
+    //Unsorted
     var projectItems: [Item] {
-        let itemsArray = items?.allObjects as? [Item] ?? []
+        items?.allObjects as? [Item] ?? []
+    }
+    
+    //Default Sort
+    var projectItemsDefaultSorted: [Item] {
         
-        return itemsArray.sorted { first, second in
-            
+        projectItems.sorted { first, second in
             if first.completed == false {
                 if second.completed == true {
                     return true
@@ -52,6 +56,16 @@ extension Project {
         return Double(completedItems.count) / Double(originalItems.count)
     }
     
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .optimized:
+            return projectItemsDefaultSorted
+        case .title:
+            return projectItems.sorted(by: \Item.itemTitle)
+        case .creationDate:
+            return projectItems.sorted(by: \Item.itemCreationDate)
+        }
+    }
     // MARK: - Testing
     
     static var example: Project {

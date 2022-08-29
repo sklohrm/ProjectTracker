@@ -14,6 +14,9 @@ extension Item {
     
     var itemCreationDate: Date { creationDate ?? Date() }
     
+    enum SortOrder {
+        case optimized, title, creationDate
+    }
     
 // MARK: - Testing
     
