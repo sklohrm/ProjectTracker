@@ -25,6 +25,7 @@
 		298C7D6728B87C9D00CB8DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */; };
 		298C7D6A28B87C9D00CB8DC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C7D6928B87C9D00CB8DC8 /* Preview Assets.xcassets */; };
 		299072CF28BD4F1F002F2204 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299072CE28BD4F1F002F2204 /* Sequence-Sorting.swift */; };
+		299072D128BE75BE002F2204 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299072D028BE75BE002F2204 /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298C7D6928B87C9D00CB8DC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299072CE28BD4F1F002F2204 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		299072D028BE75BE002F2204 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */,
 				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
 				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
+				299072D028BE75BE002F2204 /* SelectSomethingView.swift */,
 				299072CE28BD4F1F002F2204 /* Sequence-Sorting.swift */,
 				2901EC0728BBF54000D02BE0 /* ItemRowView.swift */,
 				2901EBF628BBAC0B00D02BE0 /* DataController.swift */,
@@ -199,6 +202,7 @@
 				2901EC0428BBDD6C00D02BE0 /* Project-CoreDataHelpers.swift in Sources */,
 				2901EC1028BC239100D02BE0 /* EditProjectView.swift in Sources */,
 				2901EBF728BBAC0B00D02BE0 /* DataController.swift in Sources */,
+				299072D128BE75BE002F2204 /* SelectSomethingView.swift in Sources */,
 				2901EC0828BBF54000D02BE0 /* ItemRowView.swift in Sources */,
 				298C7D6528B87C9C00CB8DC8 /* ContentView.swift in Sources */,
 				2901EC0A28BBF8C600D02BE0 /* Binding-OnChange.swift in Sources */,
