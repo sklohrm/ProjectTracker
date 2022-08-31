@@ -33,11 +33,11 @@ struct EditProjectView: View {
     
     var body: some View {
         Form {
-            Section(header: Text("Basic Settings")) {
+            Section(header: Text("Basic settings")) {
                 TextField("Project Name", text: $title.onChange(update))
                 TextField("Project Description", text: $detail.onChange(update))
             }
-            Section(header: Text("Custom Project Color")) {
+            Section(header: Text("Custom project color")) {
                 LazyVGrid(columns: colorColumns) {
                     ForEach(Project.colors, id: \.self) { item in
                         ZStack {
@@ -59,7 +59,7 @@ struct EditProjectView: View {
                 }
                 .padding(.vertical)
             }
-            Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes it entirely")) {
+            Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")) {
                 Button(project.closed ? "Reopen this project" : "Close this project") {
                     project.closed.toggle()
                     update()
@@ -72,7 +72,7 @@ struct EditProjectView: View {
         }
         .navigationTitle("Edit Project")
         .onDisappear(perform: dataController.save)
-        .alert("Delete Project?", isPresented: $showingDeleteConfirm) {
+        .alert("Delete project?", isPresented: $showingDeleteConfirm) {
             Button("Delete", role: .destructive) {
                 delete()
             }
