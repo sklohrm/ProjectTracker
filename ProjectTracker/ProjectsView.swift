@@ -82,7 +82,13 @@ struct ProjectsView: View {
                                 dataController.save()
                             }
                         } label: {
-                            Label("Add Project", systemImage: "plus")
+                            //Remove if else and use Label if voiceover bug is fixed.
+                            //Code will not work on Mac
+                            if UIAccessibility.isVoiceOverRunning {
+                                Text("Add Project")
+                            } else {
+                                Label("Add Project", systemImage: "plus")
+                            }
                         }
                     }
                 }

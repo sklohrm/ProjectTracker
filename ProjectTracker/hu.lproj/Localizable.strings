@@ -18,6 +18,7 @@
 /* HOME VIEW */
 "Up next" = "Következő";
 "More to explore" = "Felfedezendő dolgok";
+"%@, %lld items, %g%%, complete." = "%@, %lld tétel, %g%%, kész.";
 
 
 
@@ -40,6 +41,9 @@
 "New Project" = "Új projekt";
 "New Item" = "Új tétel";
 
+"%@, completed." = "%@, elkészült.";
+"%@, high priority." = "%@, elsőbbségi.";
+
 
 
 /* EDITING PROJECTS */
@@ -47,6 +51,20 @@
 "Project name" = "Projekt név";
 "Description of this project" = "Projekt dokumentáció";
 "Custom project color" = "Egyedi projekt szín";
+
+"Select a color" = "Válassza ki a színt";
+"Pink" = "Rózsaszín";
+"Purple" = "Lila";
+"Red" = "Piros";
+"Orange" = "Narancs sárga";
+"Gold" = "Arany";
+"Green" = "Zöld";
+"Teal" = "Zöldeskék";
+"Light Blue" = "Világos kék";
+"Dark Blue" = "Sötét kék";
+"Midnight" = "Éjfél";
+"Dark Gray" = "Sötét szürke";
+"Gray" = "Szürke";
 
 /* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
 "Close this project" = "Projekt bezárása";

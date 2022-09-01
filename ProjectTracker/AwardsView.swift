@@ -32,13 +32,14 @@ struct AwardsView: View {
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(dataController.hasEarned(award: award) ? Color(award.color) : Color.secondary.opacity(0.5))
                         }
-
+                        .accessibilityLabel(Text(dataController.hasEarned(award: award) ? "Unlocked: \(award.name)" : "Locked"))
+                        .accessibilityHint(Text(award.description))
                     }
                 }
             }
             .navigationTitle("Awards")
         }
-        //If logic on displayed button is here for adding extra funtionality to completed awards later.
+        //If else logic on displayed button is here for adding extra funtionality to completed awards later.
         //May need to look into reimplementing the entire modifier.
         .alert(dataController.hasEarned(award: selectedAward) ? "Unlocked: \(selectedAward.name)" : "Locked", isPresented: $showingAwardDetails) {
             if dataController.hasEarned(award: selectedAward){
