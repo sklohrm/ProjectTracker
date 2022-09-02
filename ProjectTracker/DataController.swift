@@ -14,7 +14,7 @@ class DataController: ObservableObject {
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
 
-        // For testing purposes storage is not saved when inMemory is true.
+        // For testing purposes storage is temporarily saved in-memory when inMemory is true.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -43,15 +43,18 @@ class DataController: ObservableObject {
     func hasEarned(award: Award) -> Bool {
         switch award.criterion {
         case "items":
+            // Returns true if the user has added a certain number of items.
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
         case "complete":
+            // Returns true if the user has completed a certain number of items.
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             fetchRequest.predicate = NSPredicate(format: "completed = true")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
         default:
+            // An unknown award criterion. This should never be allowed.
 //            fatalError("Unknown award criterion: \(award.criterion)")
             return false
         }
