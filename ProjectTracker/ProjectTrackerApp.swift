@@ -22,6 +22,9 @@ struct ProjectTrackerApp: App {
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .onReceive(
+                    // Automatically save when we detect that we are no longer the foreground app.
+                    // Use this rather than the scene phase API for MacOS compatability.
+                    // Scene phase won't detect app losing focus as of MacOS 11.1.
                     NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification),
                     perform: save
                 )
