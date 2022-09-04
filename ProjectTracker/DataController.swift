@@ -9,8 +9,8 @@ import CoreData
 import SwiftUI
 
 
-/// An environment singleton responsible for managing our Core Data stack, including handling saving, counting fetch
-/// request, tracking awards, and dealing with sample data.
+/// An environment singleton responsible for managing our Core Data stack, including handling saving,
+/// counting fetch request, tracking awards, and dealing with sample data.
 class DataController: ObservableObject {
 
     /// <#Description#>
