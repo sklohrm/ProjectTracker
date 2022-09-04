@@ -41,7 +41,7 @@
 		2901EBF428BBA8CB00D02BE0 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		2901EBF628BBAC0B00D02BE0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2901EBF828BBBB6500D02BE0 /* ProjectTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectTracker.entitlements; sourceTree = "<group>"; };
-		2901EBF928BBBB6C00D02BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2901EBF928BBBB6C00D02BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2901EBFB28BBBB8B00D02BE0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		2901EBFD28BBBC7200D02BE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -94,6 +94,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		291B5F1C28C50C61002CBB62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2901EC0928BBF8C600D02BE0 /* Binding-OnChange.swift */,
+				299072D228BE79DA002F2204 /* Bundle-Decodable.swift */,
+				299072DA28BEFEEB002F2204 /* Color-Additions.swift */,
+				2901EC0128BBDBC800D02BE0 /* Item-CoreDataHelpers.swift */,
+				2901EC0328BBDD6C00D02BE0 /* Project-CoreDataHelpers.swift */,
+				299072CE28BD4F1F002F2204 /* Sequence-Sorting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		291B5F1D28C50C68002CBB62 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				299072E828BFE48C002F2204 /* Localizable.strings */,
+				299072EC28BFE54F002F2204 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		291B5F1E28C50C6F002CBB62 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2901EBF928BBBB6C00D02BE0 /* Info.plist */,
+				2901EBF328BBA8CB00D02BE0 /* Main.xcdatamodeld */,
+				2901EBF828BBBB6500D02BE0 /* ProjectTracker.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		291B5F1F28C50EEF002CBB62 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				291B5F2028C50F20002CBB62 /* Home */,
+				291B5F2128C50F26002CBB62 /* Projects */,
+				291B5F2228C50F2F002CBB62 /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		291B5F2028C50F20002CBB62 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
+				29ADF88328C068C500894C92 /* ItemListView.swift */,
+				29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		291B5F2128C50F26002CBB62 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2901EC0528BBEF5B00D02BE0 /* EditItemView.swift */,
+				2901EC0F28BC239100D02BE0 /* EditProjectView.swift */,
+				2901EC0728BBF54000D02BE0 /* ItemRowView.swift */,
+				2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */,
+				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
+				299072D028BE75BE002F2204 /* SelectSomethingView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		291B5F2228C50F2F002CBB62 /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				299072D628BE890A002F2204 /* Award.swift */,
+				299072F028BFEA6D002F2204 /* Awards.json */,
+				299072D828BE8A34002F2204 /* AwardsView.swift */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		298C7D5628B87C9C00CB8DC8 = {
 			isa = PBXGroup;
 			children = (
@@ -114,33 +189,14 @@
 		298C7D6128B87C9C00CB8DC8 /* ProjectTracker */ = {
 			isa = PBXGroup;
 			children = (
-				2901EBF928BBBB6C00D02BE0 /* Info.plist */,
-				2901EBF828BBBB6500D02BE0 /* ProjectTracker.entitlements */,
-				298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */,
+				291B5F1F28C50EEF002CBB62 /* Activities */,
+				291B5F1E28C50C6F002CBB62 /* Configuration */,
+				291B5F1D28C50C68002CBB62 /* Localization */,
+				291B5F1C28C50C61002CBB62 /* Extensions */,
 				298C7D6428B87C9C00CB8DC8 /* ContentView.swift */,
-				2901EC0528BBEF5B00D02BE0 /* EditItemView.swift */,
-				2901EC0928BBF8C600D02BE0 /* Binding-OnChange.swift */,
-				2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */,
-				2901EC0F28BC239100D02BE0 /* EditProjectView.swift */,
-				2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */,
-				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
-				29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */,
-				29ADF88328C068C500894C92 /* ItemListView.swift */,
-				299072EC28BFE54F002F2204 /* Localizable.stringsdict */,
-				299072DA28BEFEEB002F2204 /* Color-Additions.swift */,
-				299072E828BFE48C002F2204 /* Localizable.strings */,
-				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
-				299072D228BE79DA002F2204 /* Bundle-Decodable.swift */,
-				299072F028BFEA6D002F2204 /* Awards.json */,
-				299072D628BE890A002F2204 /* Award.swift */,
-				299072D828BE8A34002F2204 /* AwardsView.swift */,
-				299072D028BE75BE002F2204 /* SelectSomethingView.swift */,
-				299072CE28BD4F1F002F2204 /* Sequence-Sorting.swift */,
-				2901EC0728BBF54000D02BE0 /* ItemRowView.swift */,
 				2901EBF628BBAC0B00D02BE0 /* DataController.swift */,
-				2901EC0128BBDBC800D02BE0 /* Item-CoreDataHelpers.swift */,
-				2901EC0328BBDD6C00D02BE0 /* Project-CoreDataHelpers.swift */,
-				2901EBF328BBA8CB00D02BE0 /* Main.xcdatamodeld */,
+				298C7D6228B87C9C00CB8DC8 /* ProjectTrackerApp.swift */,
+				2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */,
 				298C7D6628B87C9D00CB8DC8 /* Assets.xcassets */,
 				298C7D6828B87C9D00CB8DC8 /* Preview Content */,
 			);
@@ -428,14 +484,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ProjectTracker/ProjectTracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ProjectTracker/Configuration/ProjectTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZH66DBG8Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectTracker/Info.plist;
+				INFOPLIST_FILE = ProjectTracker/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,14 +515,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ProjectTracker/ProjectTracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ProjectTracker/Configuration/ProjectTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZH66DBG8Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProjectTracker/Info.plist;
+				INFOPLIST_FILE = ProjectTracker/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
