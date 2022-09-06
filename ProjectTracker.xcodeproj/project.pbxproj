@@ -35,6 +35,7 @@
 		299072EE28BFEA6D002F2204 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 299072F028BFEA6D002F2204 /* Awards.json */; };
 		29ADF88428C068C500894C92 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADF88328C068C500894C92 /* ItemListView.swift */; };
 		29ADF88628C06C7000894C92 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */; };
+		29BAB7D728C7BA41001F1865 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BAB7D628C7BA41001F1865 /* DevelopmentTests.swift */; };
 		29DA347F28C664B500FD11F9 /* ProjectTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA347E28C664B500FD11F9 /* ProjectTrackerTests.swift */; };
 		29DA348628C669F300FD11F9 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA348528C669F300FD11F9 /* AssetTest.swift */; };
 		29DA348828C66D1200FD11F9 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA348728C66D1200FD11F9 /* ProjectTests.swift */; };
@@ -86,6 +87,7 @@
 		299072F128BFEA7F002F2204 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
 		29ADF88328C068C500894C92 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		29BAB7D628C7BA41001F1865 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		29DA347C28C664B500FD11F9 /* ProjectTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DA347E28C664B500FD11F9 /* ProjectTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTrackerTests.swift; sourceTree = "<group>"; };
 		29DA348528C669F300FD11F9 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				29DA348728C66D1200FD11F9 /* ProjectTests.swift */,
+				29BAB7D628C7BA41001F1865 /* DevelopmentTests.swift */,
 				29DA348928C6707000FD11F9 /* AwardsTests.swift */,
 				29DA347E28C664B500FD11F9 /* ProjectTrackerTests.swift */,
 				29DA348528C669F300FD11F9 /* AssetTest.swift */,
@@ -409,6 +412,7 @@
 				29DA348A28C6707000FD11F9 /* AwardsTests.swift in Sources */,
 				29DA347F28C664B500FD11F9 /* ProjectTrackerTests.swift in Sources */,
 				29DA348828C66D1200FD11F9 /* ProjectTests.swift in Sources */,
+				29BAB7D728C7BA41001F1865 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
