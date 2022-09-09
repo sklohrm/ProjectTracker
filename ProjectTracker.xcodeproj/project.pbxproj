@@ -20,6 +20,7 @@
 		2901EC0C28BC087C00D02BE0 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */; };
 		2901EC0E28BC0C7600D02BE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */; };
 		2901EC1028BC239100D02BE0 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901EC0F28BC239100D02BE0 /* EditProjectView.swift */; };
+		295AF28D28CBF10900A4507C /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AF28C28CBF10900A4507C /* ProjectsViewModel.swift */; };
 		296641E828CA59B400ED093C /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296641E728CA59B400ED093C /* PerformanceTests.swift */; };
 		296641F028CA89B000ED093C /* ProjectTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296641EF28CA89B000ED093C /* ProjectTrackerUITests.swift */; };
 		296641F228CA89B000ED093C /* ProjectTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296641F128CA89B000ED093C /* ProjectTrackerUITestsLaunchTests.swift */; };
@@ -81,6 +82,7 @@
 		2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		2901EC0D28BC0C7600D02BE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2901EC0F28BC239100D02BE0 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		295AF28C28CBF10900A4507C /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		296641E728CA59B400ED093C /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		296641ED28CA89B000ED093C /* ProjectTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		296641EF28CA89B000ED093C /* ProjectTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTrackerUITests.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				2901EC0728BBF54000D02BE0 /* ItemRowView.swift */,
 				2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */,
 				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
+				295AF28C28CBF10900A4507C /* ProjectsViewModel.swift */,
 				299072D028BE75BE002F2204 /* SelectSomethingView.swift */,
 			);
 			path = Projects;
@@ -492,6 +495,7 @@
 				2901EBFE28BBBC7200D02BE0 /* HomeView.swift in Sources */,
 				298C7D6328B87C9C00CB8DC8 /* ProjectTrackerApp.swift in Sources */,
 				2901EC0228BBDBC800D02BE0 /* Item-CoreDataHelpers.swift in Sources */,
+				295AF28D28CBF10900A4507C /* ProjectsViewModel.swift in Sources */,
 				2901EC0628BBEF5B00D02BE0 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

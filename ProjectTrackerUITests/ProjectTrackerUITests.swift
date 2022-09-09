@@ -27,8 +27,19 @@ final class ProjectTrackerUITests: XCTestCase {
         XCTAssertEqual(app.tables.cells.count, 0, "There should be no list rows initially.")
 
         for tapCount in 1...5 {
-            app.buttons["add"].tap()
+            app.buttons["Add Project"].tap()
             XCTAssertEqual(app.tables.cells.count, tapCount, "There should be \(tapCount) list row(s).")
         }
+    }
+
+    func testAddingItemInsertsRows() {
+        app.buttons["Open"].tap()
+        XCTAssertEqual(app.tables.cells.count, 0, "There should be no list rows initially.")
+
+        app.buttons["Add Project"].tap()
+        XCTAssertEqual(app.tables.cells.count, 1, "There should be 1 list row.")
+
+        app.buttons["Add New Item"].tap()
+        XCTAssertEqual(app.tables.cells.count, 2, "There should be 2 list rows.")
     }
 }
