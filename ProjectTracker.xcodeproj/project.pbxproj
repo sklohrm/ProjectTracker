@@ -42,6 +42,8 @@
 		299072EE28BFEA6D002F2204 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 299072F028BFEA6D002F2204 /* Awards.json */; };
 		29ADF88428C068C500894C92 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADF88328C068C500894C92 /* ItemListView.swift */; };
 		29ADF88628C06C7000894C92 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */; };
+		29B7F55228CCDF8F005870FF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7F55128CCDF8F005870FF /* HomeViewModel.swift */; };
+		29B7F55428CCF6B3005870FF /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7F55328CCF6B3005870FF /* ItemRowViewModel.swift */; };
 		29BAB7D728C7BA41001F1865 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BAB7D628C7BA41001F1865 /* DevelopmentTests.swift */; };
 		29DA347F28C664B500FD11F9 /* ProjectTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA347E28C664B500FD11F9 /* ProjectTrackerTests.swift */; };
 		29DA348628C669F300FD11F9 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA348528C669F300FD11F9 /* AssetTest.swift */; };
@@ -109,6 +111,8 @@
 		299072F128BFEA7F002F2204 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
 		29ADF88328C068C500894C92 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		29B7F55128CCDF8F005870FF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		29B7F55328CCF6B3005870FF /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 		29BAB7D628C7BA41001F1865 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		29DA347C28C664B500FD11F9 /* ProjectTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DA347E28C664B500FD11F9 /* ProjectTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTrackerTests.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				2901EBFD28BBBC7200D02BE0 /* HomeView.swift */,
+				29B7F55128CCDF8F005870FF /* HomeViewModel.swift */,
 				29ADF88328C068C500894C92 /* ItemListView.swift */,
 				29ADF88528C06C7000894C92 /* ProjectSummaryView.swift */,
 			);
@@ -209,6 +214,7 @@
 				2901EC0528BBEF5B00D02BE0 /* EditItemView.swift */,
 				2901EC0F28BC239100D02BE0 /* EditProjectView.swift */,
 				2901EC0728BBF54000D02BE0 /* ItemRowView.swift */,
+				29B7F55328CCF6B3005870FF /* ItemRowViewModel.swift */,
 				2901EC0B28BC087C00D02BE0 /* ProjectHeaderView.swift */,
 				2901EBFF28BBBD0700D02BE0 /* ProjectsView.swift */,
 				295AF28C28CBF10900A4507C /* ProjectsViewModel.swift */,
@@ -480,6 +486,7 @@
 				2901EC0C28BC087C00D02BE0 /* ProjectHeaderView.swift in Sources */,
 				299072D928BE8A34002F2204 /* AwardsView.swift in Sources */,
 				2901EBF528BBA8CB00D02BE0 /* Main.xcdatamodeld in Sources */,
+				29B7F55228CCDF8F005870FF /* HomeViewModel.swift in Sources */,
 				2901EC0428BBDD6C00D02BE0 /* Project-CoreDataHelpers.swift in Sources */,
 				299072DB28BEFEEB002F2204 /* Color-Additions.swift in Sources */,
 				2901EC1028BC239100D02BE0 /* EditProjectView.swift in Sources */,
@@ -494,6 +501,7 @@
 				29ADF88428C068C500894C92 /* ItemListView.swift in Sources */,
 				2901EBFE28BBBC7200D02BE0 /* HomeView.swift in Sources */,
 				298C7D6328B87C9C00CB8DC8 /* ProjectTrackerApp.swift in Sources */,
+				29B7F55428CCF6B3005870FF /* ItemRowViewModel.swift in Sources */,
 				2901EC0228BBDBC800D02BE0 /* Item-CoreDataHelpers.swift in Sources */,
 				295AF28D28CBF10900A4507C /* ProjectsViewModel.swift in Sources */,
 				2901EC0628BBEF5B00D02BE0 /* EditItemView.swift in Sources */,
