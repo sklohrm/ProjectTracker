@@ -39,7 +39,7 @@ struct AwardsView: View {
             }
             .navigationTitle("Awards")
         }
-        // If else logic on displayed button is here for adding extra funtionality to completed awards later.
+        // If else logic on displayed button is here for adding extra functionality to completed awards later.
         // May need to look into reimplementing the entire modifier.
         .alert(label(for: selectedAward), isPresented: $showingAwardDetails) { alertButton() } message: {
             Text("\(selectedAward.description)")
